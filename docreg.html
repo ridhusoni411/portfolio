@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" >
+    <title>Registration Form</title>
+</head>
+<style>
+    body
+    {
+        height:100%;
+        width: 100vw;
+        overflow: hidden;
+        background-color: gainsboro;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        
+    }
+    img
+    {
+        height: 500px;
+        width:400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;   
+    }
+    .container
+    {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width:80%;
+        border: 1px solid transparent;
+        position: relative;
+        top:10px;
+        left:80px;
+        background-color: whitesmoke;
+        border-radius:5px;
+        border: 1px solid gainsboro;
+    }
+    
+        
+    
+    .one 
+    {
+        width:30%;
+        height: 100%;
+        background-color: #098976;
+        
+        
+
+    }
+    .two
+    {
+       
+        width:70%;
+        height: 400px!important;
+    }
+    .shadow:hover
+    {
+        border: 2px solid transparent;
+    }
+</style>
+<body>
+    <img src="https://digiqure.com/app/assets/DgQurelogo.png" style="height:33px;width:185px;position: relative;left:85px;">
+  
+    <div class="container">
+        <div class="one"><img src="1.png" alt=""></div>
+        <div class="col-12 col-sm-6"></div>
+        <div class="two">
+            <span style="bottom:30px;position:relative;left:80px;font-size: 20px;">Please fill your details</span><br>
+            <span><input type="text" placeholder="First Name" style="border-top: none;border-right:none;border-left:none;width:354px;height:27px;background-color: whitesmoke;margin-left:70px;font-size: 15px;">
+                <input type="text"placeholder="Last name"style="float:right;border-top: none;border-right:none;border-left:none;width:400px;height:27px;background-color: whitesmoke;font-size: 15px;"></span><br />
+                <span><input type="text" placeholder="Phone Number" style="margin-top:20px;border-top: none;border-right:none;border-left:none;width:354px;height:27px;background-color: whitesmoke;margin-left:70px;font-size: 15px;"></span>
+                <input type="text"placeholder="E-mail ID"style="float:right;border-top: none;border-right:none;border-left:none;width:400px;height:27px;margin-top:20px;background-color: whitesmoke;font-size: 15px;"></span><br />
+                <span><input type="text"placeholder="specialization"style="border-top: none;border-right:none;border-left:none;width:354px;height:27px;position:relative;left:75px;margin-top:20px;background-color: whitesmoke;font-size: 15px;">
+                    <select style="width:10%;">
+                        <option>Ayurveda</option>
+                        <option>Dental</option>
+                        <option>Family Medicine</option>
+                        <option>ENT</option>
+                        <option>Pathology</option>
+                        <option>Audiologist</option>
+                        <option>Cardiology</option>
+                    </select>
+                </span>
+                <span style="position: relative;left:10px;margin-top: 20px;">
+                <input type="radio" id="html"  value="HTML">
+                <label for="html">Male</label>
+                <input type="radio" id="html"  value="HTML">
+                <label for="html">Female</label>
+                <input type="radio" id="html"  value="HTML">
+                <label for="html">Other</label></span><br />
+            <span><input type="text" placeholder="State" style="border-top: none;border-right:none;border-left:none;width:354px;height:27px;margin-top: 20px;position: relative;left:75px;background-color: whitesmoke;font-size: 15px;"></span>
+            <input type="text"placeholder="City"style="float:right;border-top: none;border-right:none;border-left:none;width:400px;height:27px;margin-top:20px;background-color: whitesmoke;font-size: 15px;"></span><br />
+            <span><input type="text" placeholder="Registration No" style="border-top: none;border-right:none;border-left:none;width:354px;height:27px;margin-top: 20px;position: relative;left:75px;background-color: whitesmoke;font-size: 15px;"></span>
+            <input type="text"placeholder="Consultation Fee"style="float:right;border-top: none;border-right:none;border-left:none;width:400px;height:27px;margin-top:20px;background-color: whitesmoke;font-size: 15px;"></span><br />
+            <span><input type="text"placeholder="Pick one" style="border-top: none;border-right:none;border-left:none;width:354px;height:27px;margin-top: 20px;position: relative;left:75px;background-color: whitesmoke;font-size: 15px;"></span>
+            <select style="width:10%;">
+                <option>Google</option>
+                <option>Sales Team/BDM</option>
+                <option>Doctors Network</option>
+                <option>Ads</option>
+                <option>Others</option>
+            </select><br />
+            <p style="margin-top:20px;position:relative;left:70px;">
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I Accept T&C and privacy policy</label></p>
+         
+        <button style="background-color:lightgray;border-radius:5px;border:none;position:relative;float:right;height:26px;width:90px;top:50px;margin-right:30px;">Register</button>
+    </div>
+    </div>
+    <span style="position: absolute;left:1100px;color:rgb(0 0 0 / 50%)" class="shadow">
+        <p>Terms and condition &nbsp;&nbsp;&nbsp;&nbsp; Contact us</p>
+         
+    </span>
+</body>
+</html>
