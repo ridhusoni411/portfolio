@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive</title>
+</head>
+<body>
+
+<style>
+    body
+    {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    header
+    {
+        height:60px;
+        width:100%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid gainsboro;
+    }
+    header div
+    {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo
+    {
+        width:15%;
+        height:100%;
+        
+        
+    }
+    .search-box
+    {
+        width:85%;
+        height:100%;
+    }
+    .container 
+    { 
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .template
+    {
+        width:50%;
+        height:100%;
+        background-color: #eff2fb;
+    }
+    .inner-template
+    {
+        height:430px;
+        width:370px;
+        position: relative;
+        margin-top: 90px;
+        margin-left: 160px;
+        margin-right: 100px;
+        background-color: white;
+        border-radius: 20px;
+        border: 1px solid gainsboro;
+    }
+    .gallery
+    {
+        width:50%;
+        height:100%;   
+    }
+    .box:hover
+    {
+        background-color: lightskyblue;
+        border: none;
+    }
+    .box-one:hover
+    {
+        background-color: lightskyblue;
+        border: none;
+    }
+</style>
+
+
+<header>
+    <div class="logo"><img src="https://ui-cdn.digitalocean.com/registration/b7834f3/static/media/logo-full.05ea951a9a5341c342027070e15fb071.svg" style="height:26px;width:400px;position: relative;right:20px;"></div>
+    <div class="search-box">
+        <span style="position:relative;left:510px;color: gray;font-size: 15px;">Don't have an account? &nbsp; <span style="color:#0069ff;">Sign up</span>
+    </div>
+</header>
+
+<div class="container">
+    <div class="template">
+        <div class="inner-template">
+            <h2 style="position: relative;left:30px;font-weight:700;top:10px;">Log in to your account</h2>
+            <p style="color:#0069ff;position: relative;left:35px;">email<span style="color:orange;">*</span></p>
+            <input type="text" placeholder="Enter Your email address" style="height:28px;width:300px;position: relative;left:30px;border-radius:5px;border: 1px solid gray;padding-left: 10px;bottom: 10px;">
+            <p style="color:#0069ff;position: relative;left:35px;bottom: 20px;">password<span style="color:orange;">*</span></p>
+            <input type="text" placeholder="Enter Your password" style="height:28px;width:300px;position: relative;left:30px;border-radius:5px;border: 1px solid gray;padding-left: 10px;bottom:30px;">
+            <button style="height:35px;width:310px;position: relative;left:30px;border-radius:5px;padding-left: 10px; background-color:#0069ff;border: none;color:white;bottom: 10px;">Login</button> <hr style="position:relative;width:300px;">
+            <input type="text" placeholder="Sign in With Google" class="box" style="height:35px;width:200px;position: relative;left:30px;border-radius:5px;border: 1px solid gray;padding-left:100px;top:10px;">
+            <img src="https://img.icons8.com/color/2x/google-logo.png" style="position:relative;height:20px;top:15px;right:200px;">
+          
+            <input type="text" placeholder="Sign in With GitHub" class="box-one"  style="height:35px;width:200px;position: relative;left:30px;border-radius:5px;border: 1px solid gray;padding-left:100px;top:10px;margin-top: 20px;">
+            <img src="https://img.icons8.com/material-outlined/2x/github.png" style="position:relative;height:20px;top:15px;right:200px;">
+          <p style="color:#0069ff;top:10px;position: relative;left:30px;border-bottom: 1px solid #0069ff;width:110px;font-size: 13px;">Forgot Password?</p>
+        </div>
+
+    </div>
+    <div class="gallery">
+        <img class="main-image" src="Capture1.PNG" style="background-position-y:20px;height: 100%;">
+    </div>
+
+</div>
+
+        
+    
+</body>
+</html>
+
+<style>
+    
+    @media screen and (min-width:375px) and (min-height:667px)
+    {
+      
+    }
+
+</style>
+
+
