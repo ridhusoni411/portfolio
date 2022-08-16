@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-image: url(https://mac-bigsur.vercel.app/wallpaper/bigsur-light.jpg);
+       
+    }
+    header
+    {
+        height:10%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color:#8193af6b;
+    }
+   
+    .logo
+    {
+        width:3%;
+        height: 20px;
+    }
+    .search-box
+    {
+        width:37%;
+        height: 20px;
+       
+    }
+    .icons-main
+    {
+        width:47%;
+        height:20px;
+    }
+    .icons
+    {
+        width:18%;
+        height:20px;
+    }
+    .fb
+    {
+        width: 40%;
+        height: 10%;
+        background-color:#8193af6b;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        bottom:15px;
+        margin-left: 32%;
+        border-radius: 15px;
+        
+    }
+    .icons-box
+    {
+        height:100%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top:10px;
+    }
+    .nav-one, .nav-two, .nav-three, .nav-four, .nav-five, .nav-six, .nav-seven,.nav-eight
+    {
+        height: 100%;
+        width: 11%;
+        
+    }
+    .nav-nine
+    {
+        height:100%;
+        width:12%;
+       
+    }
+    
+    header div:nth-child(1) , header div:nth-child(3)
+    {
+        height: 100%;
+        width: 30%;
+    }
+
+    header div:nth-child(2)
+    {
+        height: 100%;
+        width: 40%;
+    }
+
+    body
+    {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header div:nth-child(1) span
+    {
+        position: relative;
+        bottom: 2px;
+        padding-right: 8px;
+        color: white;
+        cursor: pointer;
+    }
+
+    header div:nth-child(1) span:hover
+    {
+        background-color: #ffffff4a;
+    }
+
+    .icons-box div:hover
+    {
+        height: 100px;
+        width: 100px;
+    }
+
+</style>
+<body>
+
+    <div class="container-1">
+        <header>
+            <div>
+                <img src="alogo.png" style="width: 20px;height: 20px;position: relative;left: 10px;top: 1px;margin-right: 20px;">
+                <span>Finder</span>
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Go</span>
+                <span>Window</span>
+                <span>Help</span>
+            </div>
+            <div></div>
+            <div>
+                <img src="wifi.png" style="width: 20px;height: 20px;position: relative;left: 240px;top: 1px;cursor: pointer;">
+                <img src="bettery.png" style="width: 20px;height: 20px;position: relative;left: 250px;top: 1px;cursor: pointer;">
+                <span style="color: white;position:relative;left:260px;bottom:3px;font-size:15px;">Tue Aug 16 10:36PM</span>
+            </div>
+        </header>
+    <footer class="fb">
+        <center>
+            <div class="icons-box">
+                <div class="nav-one"><img src="https://mac-bigsur.vercel.app/dock/finder.png" style="width: 50px;;height:50px;border-radius: 10px;"></div>
+                <div class="nav-two"><img src="https://mac-bigsur.vercel.app/dock/calculator.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+                <div class="nav-three"><img src="https://mac-bigsur.vercel.app/dock/calendar.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+                <div class="nav-four"><img src="https://mac-bigsur.vercel.app/dock/vscode.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+                <div class="nav-five"><img src="https://mac-bigsur.vercel.app/dock/appstore.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+                <div class="nav-six"><img src="https://mac-bigsur.vercel.app/dock/safari.png"style="width: 50px;height: 50px;border-radius: 10px;" ></div>
+                <div class="nav-seven"><img src="https://mac-bigsur.vercel.app/dock/setting.png" style="width: 50px;height:50px;border-radius: 10px;"></div>
+                <div class="nav-eight"><img src="https://mac-bigsur.vercel.app/dock/github.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+                <div class="nav-nine"><img src="https://mac-bigsur.vercel.app/dock/facebook.png" style="width: 50px;height: 50px;border-radius: 10px;"></div>
+    
+            </div>
+            
+           
+    </center>
+    </footer>
+    </div>
+
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .animation-line
+        {
+            width: 20px;
+            height: 3px;
+            background-color: white;
+            border-radius: 10px;
+            position: relative;
+            right: 90px;
+            top: 350px;
+            animation: line 1 5s;
+            position: relative;
+        }
+        .animation-line::after
+        {
+            content: "";
+            height: 3px;
+            width: 180px;
+            background-color: #ffffff44;
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            animation: line1 1 5s;
+        }
+
+        @keyframes line
+        {
+            100%
+            {
+                width: 200px;
+                right: 0px;
+            }
+        }
+
+        @keyframes line2
+        {
+            100%
+            {
+                width: 0px;
+            }
+        }
+
+    </style>
+<div style="background-color: black;width:100vw;height:100vh;" class="container-2">
+    <center>
+<img src="alogo.png" style="height: 100px;width:100px;position: relative;top:300px;">
+<div class="animation-line"></div>
+</center>
+</div>
+
+</body>
+</html>
+
+<script>
+    document.querySelector(".container-1").style.display = "none";
+
+    setTimeout(() => {
+        document.querySelector(".container-1").style.display = "block";
+        document.querySelector(".container-2").style.display = "none";
+    }, 5000);
+
+</script>
