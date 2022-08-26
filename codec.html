@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>codec</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+   .container
+    {
+        height: 54px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .left-container 
+    {
+        height: 100%;
+        width:20%;
+        
+    }
+    .left-container h1
+    {
+        font-weight: bold;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+       
+    }
+
+    .right-container 
+    {
+        height:100%;
+        width:40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .middle-container
+    {
+        height:100%;
+        width:30%
+    }
+    .blank-container
+    {
+        height: 100%;
+        width:10%;
+    }
+    .dummy-data
+    {
+        color: gainsboro;
+        font-size: 18px;
+    }
+    .home
+    {
+        height: 720px;
+        width:100%;
+        background-color: #333;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+    .home-details
+    {
+        height: 100%;
+        width:60%;
+    }
+    .home-profile
+    {
+        height: 100%;
+        width:40%;
+       
+    }
+    .home-dummay-data
+    {
+        height: 55%;
+        width:70%;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    .home-dummay-data h2 , h1 , h5
+    {
+        margin-left:20px;
+    }
+    .buttons
+    {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        
+        
+    }
+    .dwnbtn
+    {
+        background-color: #ffbd39;
+        color: white;
+        font-weight: 700;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        
+        
+    }
+    .hrbtn
+    {
+        background-color: #673de6;
+        color: white;
+        font-weight: 700;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-right: 20px;
+        
+
+    }
+    header
+    {
+        height:70px;
+        width:100vw;
+        background:#333;
+    }
+    
+</style>
+<body>
+    <header>
+    
+        <div class="container">
+        <div class="left-container"><h1>CodeC</h1> </div>
+        <div class="middle-container"> </div>
+        <div class="right-container">
+            
+            <span class="dummy-data">Home</span>
+            <span class="dummy-data">ABOUT</span>
+            <span class="dummy-data">SERVICES</span>
+            <span class="dummy-data">RESUME</span>
+            <span class="dummy-data">PORTFOLIO</span>
+            <span class="dummy-data">BLOG</span>
+            <span class="dummy-data">CONTACT</span>
+        </div>
+        <div class="blank-container"> </div>
+    </div></header>
+    <div class="home">
+        <div class="home-details">
+            <div class="home-dummay-data">
+                <p><h2 style="color: #ffbd39;font-size:25px;font-weight:900;">Hello !</h2></p> 
+                <p><h1 style="color: white;font-weight:bold;font-size:38px;">I'm Professional Web Designer &</h1>
+                    <h2 style="color: #ffbd39;font-size:35px;font-weight:800;">Wordpress Developer</h2>
+                </p>
+                
+                <p><h5 style="color: white;font-size: 19px;font-weight: 300;">It is a long established fact that a reader will be distracted by the readable <br>
+                    content of a page when looking at its layout.</h5></p>
+                    <div class="buttons">
+                    <button class="hrbtn">Hire Me</button>
+                    <button class="dwnbtn">Download CV</button></div>
+            </div>
+        </div>
+        <div class="home-profile"><img src="https://binarygeckos.com/jainil/codec/assets/images/man.png" style="height:720px;"></div>
+    </div>
+    <style>
+        .middle-profile
+        {
+            height:454px;
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #333;
+
+        }
+
+        .left-profile
+        {
+            height:100%;
+            width:60%;
+
+        }
+        .right-profile
+        {
+            height:100%;
+            width:40%;
+            
+        }
+        .data
+        {
+            height:400px;
+            width:80%;
+            background-color: #333;
+            margin-top: 30px;
+            margin-left: 100px;
+        }
+        .data h5, h3,h4
+        {
+            margin-left: 20px;
+        }
+        .ridhu
+        {
+            height:40px;
+            width:50%;
+            background-color: #333;
+            position: relative;
+            bottom: 70px;
+            margin-left: 20px;    
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .mybtn
+        {
+            display: flex;
+            flex-direction: row;
+            margin-left: 30px;
+            position: relative;
+            bottom:60px;
+        }
+        .btnr
+        {
+            background-color: #ffbd39;
+            color: white;
+            font-weight: 700;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+        }
+        .btnh
+        {
+            background-color: #673de6;
+            color: white;
+            font-weight: 700;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        
+        
+        
+    </style>
+    <div class="middle-profile">
+        <div class="left-profile">
+            <div class="data"><p><h5 style="font-size:17px;color:#ffbd39;position:relative;top:10px;">About Me</h5></p>
+                <p><h4 style="color: white;font-size:23px;position: relative;bottom:15px;">Hello! I'm <span style="color: #ffbd39;">David Andrew.</span> I'm Professional Web</h4></p>
+                <h3 style="color: white;font-size:21px;position: relative;bottom: 40px;">Designer</h3>
+                <h3 style="color:white;font-size:22px;position:relative;bottom:55px;">& Wordpress Developer &<span style="color: #ffbd39;"> Freelancer.</span></h3>
+                <h5 style="color:white;position:relative;bottom:60px;font-size:16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ut lorem <br>
+                    vitae ultricies. Integer porta, libero sit amet pretium lobortis, tortor mauris eleifend<br>
+                    urna, ut laoreet velit nisi scelerisque ex. Fusce vel pulvinar ligula. Etiam eget dolor<br>
+                    leo. Phasellus eu dolor cursus, sodales nunc at, tempor turpis
+                </h5>
+                <h5 style="color:white;font-size: 16px;position: relative;bottom: 60px;">Morbi ac ante neque. In porttitor imperdiet blandit. Aliquam laoreet rutrum mattis <br> 
+                    Pellentesque id ligula et purus tincidunt tempus a nec purus</h5>
+                    <div class="ridhu">
+                        <p style="color:gainsboro;font-size:18px;position: relative;">Follow Me:</p>
+                        
+                            <img src="insta.png" style="height:30px;width:30px;">
+                            <img src="home.jpg" style="height:30px;width:30px;">
+                            <img src="yta.png" style="height:30px;width:30px;">
+                            <img src="gd.png" style="height:30px;width:30px;">
+                        </div>
+                            <div class="mybtn">
+                            <button class="btnr">My Work</button>
+                            <button class="btnh">Download CV</button></div>
+            </div>
+        </div>
+
+        <style>
+            .profilebox
+            {
+                background-color: #333;
+                height: 400px;
+                width: 500px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top:30px ;
+            }
+            .profilebox div
+            {
+                
+            width: 45%;
+            height: 45%;
+            background-color: rgba(63, 61, 61, 0.687);
+            }
+            .profilebox div:nth-child(odd)
+        {
+            margin-right: 20px;
+        }
+        .services
+        {
+            height:250px;
+            width:100%;
+            background-color: #333;
+        }
+        .services-2
+        {
+            height:250px;
+            width:100%;
+            background-color: #333;
+        }
+        .edu-box
+
+        {
+            height:500px;
+            width:70vw;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .edu-box div 
+        {
+            background-color: #262020;
+            border-radius: 10px;
+            height: 46%;
+            width: 30%;
+            margin: 10px;
+            align-items: center;
+        }
+        .edu-box div  p
+        {
+            align-items: center;
+            color: gainsboro;
+            font-size: 30px;
+            font-weight: 700;
+            top:30px;
+            position: relative;
+        }
+        
+        .edu-box:hover p
+        {
+            color: #ffbd39;
+        }
+        .edu-box h5
+        {
+            color: gainsboro;position: relative;top:20px;
+        }
+
+        .education-box
+
+        {
+            height:200px;
+            width:60%;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            background:#333;
+            position: relative;
+            bottom: 30px;
+        }
+        .ed-box1 , .ed-box2, .ed-box3
+        {
+            
+            height: 100%;
+            width: 33%;
+            border:1px solid gray;
+            background-color:#333;
+           
+           
+        }
+        .ed-box1,.ed-box2
+        {
+            margin-right:30px;
+        }
+        
+       
+
+            
+        </style>
+        <div class="right-profile">
+            <div class="profilebox">
+                <div class="pro-icon-1"><h2 style="color: white;font-size:45px;margin-left:70px;">599</h2>
+                    <p style="color: white;font-size:20px;margin-left:65px;position:relative;bottom:40px;">Happy Client</p>
+                </div>
+                <div class="pro-icon-2">
+                    <h2 style="color: white;font-size:45px;margin-left:70px;">2001</h2>
+                    <p style="color: white;font-size:20px;margin-left:80px;position:relative;bottom:40px;">Sales</p>
+
+                </div>
+                <div class="pro-icon-3">
+                    <h2 style="color: white;font-size:45px;margin-left:70px;">5000</h2>
+                    <p style="color: white;font-size:18px;margin-left:50px;position:relative;bottom:35px;">Projects Complete</p>
+                </div>
+                <div class="pro-icon-4">
+                    <h2 style="color: white;font-size:45px;margin-left:70px;">6</h2>
+                    <p style="color: white;font-size:20px;margin-left:40px;position:relative;bottom:40px;">Experiance</p>
+                </div>
+                </div>
+                </div>
+               
+    </div>
+    <center>
+    <div class="services">
+        <p style="font-size: 30px;color:white;top:40px;position: relative;font-weight: 700;">Our services</p><hr style="border-bottom: 4px solid orange;border-left:none;border-top:none;border-right:none;width:200px;top: 20px;position:relative;">
+        <p style="position: relative;top:20px;font-size:18px;color:gainsboro;">Etiam suscipit ante at sem facilisis, id sagittis nunc aliquet.Vivamus sodales elementum pharetra. Cras <br>dignissim justo eu accumsan vulputate.</p>
+ </div>
+
+ <div class="edu-box">
+    <div class="e-box1"><p>Web Design</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+    <div class="e-box2"><p>Web Devlopment</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+    <div class="e-box3"><p>UI/UX Design</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+    <div class="e-box4"><p style="font-size: 28px;">App Design & Devlop</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+    <div class="e-box5"><p>Graphic Design</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+    <div class="e-box6"><p>SEO Marketing</p><h5>In nisi tortor, consequat eu semper ut, consequat in massa. Maecenas at odio a felis commodo pulvinar quis eu neque.</h5></div>
+ </div>
+
+ <div class="services-2">
+    <p style="font-size: 40px;color:gainsboro;position: relative;font-weight: 700;">Our services</p><hr style="border-bottom: 4px solid orange;border-left:none;border-top:none;border-right:none;width:260px;bottom:35px;position:relative;">
+    <p style="position: relative;bottom:30px;font-size:18px;color:gainsboro;">Etiam suscipit ante at sem facilisis, id sagittis nunc aliquet.Vivamus sodales elementum pharetra. Cras <br>dignissim justo eu accumsan vulputate.</p>
+    <p style="font-size: 40px;font-weight:600;color: gainsboro;position: relative;bottom:40px;">My Education</p>
+</div>
+
+
+
+<style>
+    .yr, .yr-1, .yr-2
+    {
+        height:23px;
+        width:85px;
+        background-color: #ffbd39;
+        color: white;
+        border-radius: 10px;
+        position: relative;
+        top:30px;
+        right:80px;
+    }
+    .education-box p
+    {
+        font-size: 25px;
+        color:white;
+        font-weight: 600;
+        position: relative;
+        right:10px;
+    }
+    footer
+    {
+        height:150px;
+        width:100vw;
+        background-color: #3e3c3c;
+    }
+    footer div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    footer div:hover
+    {
+        background-color: grey;
+        
+    }
+</style>
+
+<div class="education-box">
+    <div class="ed-box1"><div class="yr">2001-2005</div><br><p>Computer Science</p><br><h5 style="color: white;position:relative;bottom:40px;right:15px;font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ut lorem vitae ultricies. Integer porta, libero sit amet pretium lobortis</h5> </div>
+    <div class="ed-box2"><div class="yr-1">2006-2010</div><br><p>Bechelor Degree</p> <h5 style="color: white;position:relative;bottom:10px;right:15px;font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ut lorem vitae ultricies. Integer porta, libero sit amet pretium lobortis</h5></div>
+    <div class="ed-box3"><div class="yr-2">2011-2016</div><br><p>Master Degree</p><h5 style="color: white;position:relative;bottom:10px;right:15px;font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur ut lorem vitae ultricies. Integer porta, libero sit amet pretium lobortis</h5></div>
+    </div>
+</center>
+<footer>
+<div style="color: black;font-size:40px;font-weight: 800;"> <br>
+    <h3  style="font-size: 20px;">“If You Think Math is Hard Try Web Design"</h3>
+   
+</div>
+
+
+</footer>
+
+</body>
+</html>
