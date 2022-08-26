@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        width: 80%;
+        border: 1px solid transparent;
+        position: relative;
+        background-color: white;
+        margin-top: 40px;
+        margin-left: 160px;
+        border: 1px solid gainsboro;
+    }
+
+    .container-left {
+        width: 30%;
+        height: 100%;
+
+    }
+
+    .container-right {
+
+        width: 70%;
+        height: 650px !important;
+        background-color: white;
+        background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUVGBoaGBgXFxcYGhoYFxgYGhoaGhoZHSggGholGxgYITEhJSkrLi8uGB8zODMtNygtLisBCgoKBQoKDg8FGisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIARAAuQMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAACAQADBAf/xAAzEAABAgQEBQUAAQMEAwAAAAABABECITFBUWGB8HGRobHBAxLR4fETIjJSFGKSokKC0v/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD7OMn5v0JUMdDfDVjwXSAMGY9EQKlnnLoPCARQ5kPUNtil7TYM1H5ck4gXyWigwvV0Bivo2+a0AvgUg1ukgoWqNJIF6jXpwXITDNegkweR7LrASTuu36IBhITKDl6sMzZhJOGAGhY5bom4NQgYTgXeoQUTDgNdsVhFOlfHRIBg22+Ufc1p9sAgxNSHfDDdVz9otMNN6gffldYywD126scQFuMtuUBJdpC98JKxFxRwQrEHyFXp+LQxTbxuSARPJzI1sriAxGDrQwl/ufZaKAghiXnwtigMcDyGAvmUoPRxA0fZSjhakuCgge/T5QEgAVm+vDwkf6XJL5KPJ2PxopECR0fFyJ9EC1bIMtPP/iUBFOQ4OKWLYqf6XOL/AJH4QKOM49loTQNPGkglHCN9XU9SE2yZskF/jykOaoE2mx3vRZ34mUrKOKu4eZ7eECggqx3tuSPsPJIlt2H6sC7tI7qg1AzzAdQBhrPgHTFMUDCRmEFMxi2+yxJYIxF8t5pkjlSqAkS3Sn2rN7cbqdi7ulC+E+KCfxzevHwsDIZG/JYmr2wWhpgEGiN/ig4qe2YYzzNlYi4fe5dViActEGarv20WDM41upEXpaSILc9/CBRRFyeHLbqQVq8/H4kYnaU+UslHAEr7ugurPNjPRWAVlLoudDvr1TghkXod74ICRgbjjNVo8RyVhjdpVEkf6v8AIIHCUXkxk2wtCazMq03ZExNfPigQAwmd3V92CzUBD9UPaRlid7CCwhzObd0meyzOGo25rQ2rLc0GhLZItt/pYx13iqC86TwqEEEpPum5Le7ZVhGfDHjNGL1BQsRqECEWmY3JaKGQuqJUn3RhB3i8+CBQ3n5ZY8Q3lFnLYdShHDdqb3tgUBYzO893TDIwsHfHfZGGEG2e+qDpOxvfssRhqswdsJqCKckGEPW+CoFiiDxpPeKpNTcfqCOAoI5y4XPwiBsAd+DJcRa88boFCcBVdFyEUgAZ7PZVzn/1+UFjaumSEcbCTaFl0aY1O+aB9O0+dvtkB9D1X1+/hOBjJ3ZH02B3u6YDHLjvJBgWzzkszB8p6IxmZzzWP9oGVAgscL2nvwt6lJNLbKkFja/RH0wem95oBHDCR+deqsRcMBnXDvZVqTYAb1SHp3v0bd0FMX6B9Iuc98lQHk+L6zWIwfmw3wQQC46qmEmtFTaXX6Wo79EAhhMybTbmp7HYmb7HcpxRAMDfFYOLOggBnDvdVmnPTBUSLmpkFsWL8+maCRs0iNEoBazclHIsTPdFvcBLE9UBhhOfMCawgD7Pf4S9tgZXxWcYOKOgxFhz0LKMc+YVhsLtVD+I7iPwgUBeRryVJb7QgFAJzPeacd8Dv5QEx8e3T7W9GtuXlUQjJuaxOyfAQXwbZ/qokDIaIe7DpIKgNNqdkG9xPNpdZKxepNmVMWAnVGIkzHAoJBE5nQ0VAL38MpBDTAJOcZjDygsT4X4yVgu+R6N4R/pxnkZ/akQMuviiAxRkcPj7SBLvxHLZWghyJ4qwem19OiCg5TFCsaTshFGfwXNJFKOCpxQZzc03dGGO18flkogeaggaV5cggRM6s01zMBLzcVzxkkPUpSe9VYYSCLhBoIsp7xUALSxzxU9ssxXjilDO+oog0UeEpthYoe449QunvxGtvpH/AE4xKDe5jJq2rRJp9eJNVvcLyObLEFjTL7QYs/dAw9N1ViOIl0yR9OKczM2O6IFDBw7qxDU2enSSwILim9yWAkwrfWaDRm5tKWisJZh1WgvTvRRnGIOkkBM3e2PwsIg4m+98lPUhnK+/nmp7GqZ9UDMRfhhgXqkau/BlDE7dZHkjF6jGg1kgcJAx1RELPEc+SkJJk/RuaRMgLkUQSL1CD/bVYEVmW8oxQl3nvIJwnKp4W+UGIDtrUgKRwl/6S2/pYQgl85vN0vdM3QD0iQWLfeiogwJl145LRQzcqxQh7vWRQUlwDfbhaMAtOXdTCRF/1QQ5CeP4ghLkthTh+lBz/keRT9pmCA2ijHAckC4BsbbKjOB2WJGT4Eqx7bsgsMUh3WJnvNE0eYw/FicBwJ83wQUYEcFiXAwdaF3nsNlmsDZAYDdmomTlLfRAw1/SmZvgEE9r9a4KMBrhJYnAMmYsKhBGBo0lGGDbyWiOHYjwtERi3RBmsOdFif0VmrDEKVUMMr9mdBTFItZaAmfkEKAHGdz8dVoocBvjVBvcdVYa0b7wUERvv5KlZmlt2Qb03ee6faXsBL74oGMjz+pEYSbkgMcdd7vyVJIGm6qCBqnQpiHN+M6oOYid8s/hd1za1rsyaDnBIPbtqqxaXjupDExAb91kyceZkeiAwQfpqrOfQeVi2BLUWgLl2tigJiDMC2nyqYgdjwgGZi7rTMq7t1QdIBI91hDx44qema8+bomMzw3kgsEIw5micdDqoY3lffJQCRsJSfmgwFX46IxRYAyzSBzB1sq2A3kgkIdmLiurrRRSJfg3VH04mE8PMSsQbXpnyQaOIifPQt5RM8wKt8Loxca+UjCJZIOBGndiQusecwVPUg6uqC5yCAQQZ/LFWOd5XZaEVBv4P2sXqZth4FkB9k5Dj9/HZKIWsKpnhITRiJqL73qgnsfiM3R/lz6KuP8Axd92W/hOA5n4QOCPGts0AQCMaZ7KvtZ6MC5xN04yZvQN9oDBAav5W9MNpYJmMUdcx6lwMp42QL043r9NxRiAq55FlY6BqE99usBoeM0GZuHyoIcC8+oKUBlo/NYAngUANpU/fFnXTOWSgm83FlTKQrt0EBxpwUv/AGjkqZMSaIRg8Znf6guEhpjJIioIM8Oi5wxzY7IShBsZYkoLDC3E0yXQlcoY6a0Si/yE975IN6h6hGEjFt5pEhxuaMQFBPU3QZndrONZ/JSgF7Zy2EYyz5UFEhWQtX7QZw7vyn2ssK0qqXuQN4n4Q9OJ+eVGyogscbtgUvbmVCLPNq6/SrHEcvtAAXNy/ADfwr6k7bIM1QMBzW9zOgoash0WiLyHNQmpYOFjiZzlqgkdhbY8pe3NCGAENQjv8KxeocOv0gkEmxMvvp1VJLTPKfhYCpww4d0o2ApXyg4QkkszgCWdKrqR/TPb0qoGM3NK0krFMMNsgsMfX4UaTk8rrQRNJwQoYMNJoEfUADseTLUDSalfpRgKltViOBFkBgFSQ7bZKIhqT7fCP8mfC17iycBBJkJIAOAnNvpkoIRZtLIepDLduKcFcy7+CgmIrKcq9V09uJPbsjDSZIZD1DQ50+UFByc2x6qmI7G+6PqGcsLA+NETmW5+UDEAedqgznYzXT3DFcYBOm95re+DDogftuZFYAUnNCKKbCvMrrDXjNAfawJJn4VrSm6LABsfbipZhuc/KCiJqb+VHFxzHZdCFyNM9ZaIKH4ZBuzKklmk/QqAUxv9pRMRWl0BMTFsc7qxQyn9DRGKAlinPIoORJE30feyukUIfjVQenuv6qIhmUBihJn53tlRgTOqhhc4z4KxQHLXsgsMJAaXP6RhDNrJYRB3dtarepFLgyBBiS9cH8I+kS+WQYSShfVYxU6oN7LVUieYJHn6W9ks/OC0M5749kFjALdEQA/SQCQlWTE6re24PAWQQHm7Vdcv5+PT4XUjLjOl1PcMRyQICzou8NMelFYpGd5KQ0Y9EFFQaC09uoCHu9n7cFmqcKaK+tTlkgsURuQOqxhe45KGzkgkWUNW3TlZBi1K5fOKsJBsx8rFt0+EKb3YlAjIF6tXGWCoM8n8ErRwzl9y/VAKZHw3lAgZzrTRYSNuyMZqMVCJuTxfogYE3Lba6BJuRVt/CchWb5EqCeR8IDGANK3YcBorAzC+N5yW9OEM5k2iRir4qgoNEAZFmYYcViQDMdXTiqOSCMQaBroihw+z9Bb2vQUxSiiqMJ75oEIQESHfgQTut1hHjzUsBOm9UEMLdpd+NVvb/t6Q/KtRR2tpZD3jCHr/APKBHV9sk8ydFDqN5KRbcFBSYTeuawAfh+fKkDMzqiCboMS+m/hSOG89t8MsDVjx+lIA0+WKDe42039Kj097+FnY0qlE6DO+ixs58IkUdWGdfjygsJOCj49AT1RBlt+OSxJ4NbboEQ91oCMQtCK7xQijIpggXutIyvit5ny+mS9OJw5UAlzQc/YXwGlNuukRPx3dAETtg8y2qQuZFAnIzcqGOVpa9AoYn4+R+KGEY/PJAvTi5MCsI65LM+94KgMdN90BJ0et9GW953CUYom64C6P8u3KDt7Rgg+D8ynHQrmDcYIGJ3PT4UAY7z+FfTuVhXeXygntD8FIiMa48c1gaTw3xXSJAZlQElwRLeHBSENE2IdXKrdUFd6B+ykQlO9d8VvUpVnXN8ab3qg6EzosRmMnSEUnK5xhs957mgbYaqDBg6xYSrc70SJqG+0EdrAa/SgGFseqEUTaSbjWe6KwRdahsvxAjOQzOuysQ7tvJaTBsd1ydWKLigLF932EvULTUiPIV31WG3JZkGLm9hTqsAQLSHea0XTT5UMbAS3eSCvx0z4re7/d2+Ej0wRYYHkUFnn08FRxjCoCGllSQWBlXqgXv4c1IDPeXws9JnpuyrPgdPtBDPjxI6JCL9RhtgBVURCyCD+7TfdX3XkuYdzIE3HZL3VJFN9kGPp8uLMtEaGT9BwWgj1k6pFC2HTxVBBERd9FSATW1FozmHWyFgggg6fXwqIbm3YUWBD1mq0pdD8oIQK1eXBUhhVEOA25ngpCZ03x5oGYh9z7qc5Yrm1CetueqYiDTOCBtJqoCEMcMblb1OPZUQ13+oIYXOHyOlEge58qwszoiHHzgg0cTELfyhXANJH+HM80ChF3dpINSR49JquA353VhisOpQQgPOWCwqW3wViixa98M1gTYb32QTJzMd0y+I5IsTlny+1jWejdUFBz6KjgwRhs9WQJY1s/33QIAAeSO6wabVavwqSWft9oQlpZy5sd5oHdhysyhMt0eXhWIC3J1mrP6QcYo/F87LpB3zfdDzUMG2pyTAavJBK4S3jwUEJlylt+qjMRhjvfVMliTP5QGEDAnvr9pCJ3tnVX08L7moWc8Pl/CAxei87q+lEWqCVSbPWWa0DDHiUFIy42/VgZz6OWRNW33RhjLYTLnVAizAnbl0vbF/l0RMRBYZSZ5XK6oPNDDsOU4ZT+AO6JJk+PzXVcgTh/1QegRicxPCasMV3cDKe/lcAcYm/9kxHVqeUFGQrS2hZL04r9+s1yEYmYjXHLAVC0ZtUYSkB9sg6wwzeVbYMyFMWpwZ26OhAzylVx9Ku5qKvTDNAhHmLDPl8Kw2eUm7b0Q9T1iLa/SPpRseOUnM+aDuTJzVtUZmkPM+AgYxMGRMrztvigInhDkykw3gg7xe655D5Q9ww1iPgoiIMWtPUTXOOIAmYnxJ5UQeqAvq1MaeEYYrGligRQE2OWDUU9P+0gF+k27IG82APUJCN2IFPplw9QuXHY/C6k1JkGHn6QMR1Mr9EIYSCBuW+q5iHGtDwMvLrpEDpcnLx9oOkMjWZUb+56fpQ9zNQjdFYfUehkgryE6Dml/Vl1XOOKdLatOiP82UfJB//Z);
+    }
+
+    .ridhu {
+        height: 60px;
+        background-color: rgba(249, 246, 246, 0.934);
+        position: relative;
+        bottom:185px;
+
+    }
+
+    .ritzy {
+        height: 50px;
+        background-color: rgba(249, 246, 246, 0.934);
+        
+
+    }
+
+    .search-box {
+        height: 50px;
+        background-color: #ffffff;
+        position: relative;
+        bottom:180px;
+        border-bottom: 1px solid gray;
+
+    }
+
+    .chats {
+        height: 60px;
+        background-color: #ffffff;
+        position: relative;
+        top: 20px;
+        border-bottom: 1px solid #00000008;
+        color: black;
+    }
+    
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="container-left">
+            <div class="ridhu">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/207692467_514998043318519_6276331715088754419_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AVztP2T-eLAXaPfdTx5S-Uk-OQ7B_sPaWpsn_Udu9N9e8w&oe=630AEAAC"
+                    style="height:45px;width:45px;border-radius: 50%;position: relative;margin-left: 10px;top:7px;">
+                <svg style="position: absolute;right:100px;top:18px;" version="1.1"
+                    id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24" width="24" height="24"
+                    class="">
+                    <path fill="currentColor"
+                        d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z">
+                    </path>
+                    <path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+                </svg>
+                <svg style="position: absolute;right:50px;top:18px;" viewBox="0 0 24 24" width="24" height="24"
+                    class="">
+                    <path fill="currentColor"
+                        d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                    </path>
+                </svg>
+                <svg style="position: absolute;right:10px;top:18px;" viewBox="0 0 24 24" width="24" height="24"
+                    class="">
+                    <path fill="currentColor"
+                        d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
+                    </path>
+                </svg>
+            </div>
+            <div class="search-box">
+                <input type="name" placeholder="Search or start new chat"
+                    style="height:30px;width:250px;background-color:#f0f2f5;border-radius: 10px;border: none;position:relative;top:10px;margin-left:15px;padding-left: 60px;"></input>
+                <svg viewBox="0 0 24 24" width="20" height="20" preserveAspectRatio="xMidYMid meet" class=""
+                    style="position:relative;left:10px;top:15px;">
+                    <path fill="currentColor" d="M10 18.1h4v-2h-4v2zm-7-12v2h18v-2H3zm3 7h12v-2H6v2z"></path>
+                </svg>
+
+
+
+
+                <div class="chats"><img src="bg.jpg"
+                        style="height:50px;width:50px;border-radius: 50%;position: relative;top:5px;background-color: gray;left:10px;">
+                    <div class="left_slide_top">
+                        <span style="font-size:17px;position:relative;bottom:45px;left:70px;">
+                            Binary Training Dev
+                        </span>
+                        <span
+                            style="color:grey;font-size:13px;float:right;position:relative;bottom:45px;margin-right:10px;left:0px;">
+                            10:00 AM
+                        </span>
+                        <span style="font-size:12px;position:relative;bottom:25px;right:80px;">
+                            Update your work details
+                        </span>
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="chats"><img src="bg.jpg"
+                    style="height:50px;width:50px;border-radius: 50%;position: relative;top:5px;background-color: gray;left:10px;">
+                <div class="left_slide_top">
+                    <span style="font-size:17px;position:relative;bottom:45px;left:70px;">
+                        Attendance BG
+                    </span>
+                    <span
+                        style="color:grey;font-size:13px;float:right;position:relative;bottom:45px;margin-right:10px;left:0px;">
+                        10:00 AM
+                    </span>
+                    <span style="font-size:12px;position:relative;bottom:25px;right:20px;">
+                      In out
+                    </span>
+                    <span
+                        style="color:grey;font-size:13px;float:right;position:relative;bottom:25px;margin-right:10px;left:45px;">
+                        8
+                    </span>
+                </div>
+            </div>
+
+
+
+
+            <div class="chats"><img src="task.jpg"
+                style="height:50px;width:50px;border-radius: 50%;position: relative;top:5px;background-color: gray;left:10px;">
+            <div class="left_slide_top">
+                <span style="font-size:17px;position:relative;bottom:45px;left:70px;">
+                    Binary Task Updates
+                </span>
+                <span
+                    style="color:grey;font-size:13px;float:right;position:relative;bottom:45px;margin-right:10px;left:0px;">
+                    10:10 AM
+                </span>
+                <span style="font-size:12px;position:relative;bottom:25px;right:80px;">
+                    Update your work
+                </span>
+                <span
+                    style="color:grey;font-size:13px;float:right;position:relative;bottom:25px;margin-right:10px;left:45px;">
+                    5
+                </span>
+            </div>
+        </div>
+                
+
+            </div>
+        </div>
+
+        <div class="container-right">
+            <div class="ritzy">
+                <img src="https://pps.whatsapp.net/v/t61.24694-24/207692467_514998043318519_6276331715088754419_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AVztP2T-eLAXaPfdTx5S-Uk-OQ7B_sPaWpsn_Udu9N9e8w&oe=630AEAAC"
+                    style="height:40px;width:40px;border-radius: 50%;position: relative;margin-left: 20px;top:5px;">
+                    <span style="font-size:17px;position:relative;left:10px;bottom:15px;">
+                        Ridhu Soni
+                        <div class="_2cNrC" data-testid="search-button"><div aria-disabled="false" role="button" tabindex="0" class="_26lC3" data-tab="6" title="Search…" aria-label="Search…"><span data-testid="search-alt" data-icon="search-alt" class=""><svg viewBox="0 0 24 24" width="24" height="24" class=""  style="height:25px;width:25px;position:relative;left:800px;bottom:20px;"><path fill="currentColor" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg></span></div><span></span></div>
+                        
+                    </span>
+                    <span style="font-size:12px;position:relative;bottom:50px;left:74px;">Online</span>
+<style>
+   
+    .to-message
+    {
+    	height:30px;
+        width:70px;
+        float:left;
+        background-color:white;
+        border-radius: 10px;
+        margin-top:20px;
+        margin-left:10px;
+        border: 1px solid transparent;
+        
+     }
+     .from-message
+     {
+    	height:30px;
+        width:200px;
+        float:right;
+        background-color:white;
+        margin-top:40px;
+        margin-right:30px;
+        border: 1px solid white;
+        border-radius: 10px;
+        
+     }
+     .to-message-a
+     {
+        height:30px;
+        width:130px;
+        float:left;
+        background-color:white;
+        border: 1px solid transparent;
+        border-radius: 10px;
+     }
+     .from-message-b
+     {
+        height:30px;
+        width: 250px;
+        position: relative;
+        left:600px;
+        background-color:white;
+        border-radius: 10px;
+        border: 1px solid transparent;
+     }
+     .to-message-c
+     {
+        height:30px;
+        width: 300px;
+        background-color:white;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        position: relative;
+        top:120px;
+     }
+
+     .from-message-d
+     {
+        height:30px;
+        width: 215px;
+        position: relative;
+        left: 640px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+        top: 130px;
+     }
+</style>
+
+                    
+            </div>
+
+            <div class="chat-message-container-wrapper">
+                <div class="to-message"><h3 style="position: relative;bottom:15px;margin-left: 5px;">Hiiiii</h3></div>
+                <div class="from-message"><h3 style="position: relative;bottom:15px;margin-left: 5px;">Hello How are you ??</h3></div>
+                <div class="to-message-a" style="position: relative;top:90px;right:70px;"><h3 style="position: relative;bottom:15px;margin-left:5px;">I am fine.</h3></div>
+                <div class="from-message-b" style="position:relative;top:110px;"><h3 style="position: relative;bottom:25px;">Good..</h3></div>
+                <div class="to-message-c"><h3 style="position: relative;right:70px;bottom: 15px;">Where do you live?</h3></div>
+                <div class="from-message-d"><h3 style="position: relative;bottom:15px;margin-left:10px;">I live in Rajkot .</h3></div>          
+        </div>
+</body>
+
+</html>
