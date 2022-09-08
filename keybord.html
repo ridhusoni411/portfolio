@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/forcodepen1.css">
+    <title>keyboard</title>
+</head>
+<style>
+    body {
+        background: #c33764;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1d2671, #c33764);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1d2671, #c33764);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .container {
+        margin: 100px 0 0 200px;
+    }
+
+    .row {
+        width: 100%;
+        height: 60px;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five {
+        margin: 10px 0 0 0;
+    }
+
+    button {
+        color: black;
+        font-weight: 500;
+        width: 55px;
+        height: 55px;
+        border: none;
+        background: rgb(214, 214, 214);
+        box-shadow: 0 0 10px #9521f3, 0 0 40px #c600ee, 0 0 80px #f704f7;
+
+        font-size: 15px;
+        margin-left: 5px;
+        outline: none;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 20%;
+    }
+
+    button:active {
+        box-shadow: 1px 1px 2px #fd0c99, 1px 1px 2px #ff00dd;
+    }
+
+    .print {
+        width: 85px;
+        border-radius: 10px;
+    }
+
+    .back {
+        width: 148px;
+        border-radius: 10px;
+    }
+
+    .tab {
+        width: 115px;
+        border-radius: 10px;
+    }
+
+    .slace {
+        width: 90px;
+        border: 10px;
+    }
+
+    .cap {
+        width: 96px;
+        border-radius: 10px;
+    }
+
+    .enter-btn {
+        width: 109px;
+        border-radius: 10px;
+    }
+
+    .shift {
+        width: 135px;
+        border-radius: 10px;
+
+    }
+
+    .last {
+        width: 56px;
+        border-radius: 10px;
+    }
+
+    .space {
+        width: 398px;
+        border-radius: 10px;
+
+    }
+</style>
+
+<body>
+
+    <input type="text" style="width:300px;height:50px;font-size:30px;" class="demo">
+
+    <div class="container">
+
+
+        <div class="row one">
+            <button>~</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>-</button>
+            <button>=</button>
+            <button class="back">Backspace</button>
+            <button>Home</button>
+        </div>
+
+
+        <div class="row two">
+            <button class="tab">Tab</button>
+            <button>Q</button>
+            <button>W</button>
+            <button>E</button>
+            <button>R</button>
+            <button>T</button>
+            <button>Y</button>
+            <button>U</button>
+            <button>I</button>
+            <button>O</button>
+            <button>P</button>
+            <button>{</button>
+            <button>}</button>
+            <button class="slace">\</button>
+            <button>Pg Up</button>
+        </div>
+
+
+        <div class="row three">
+            <button class="cap">Caps Lock</button>
+            <button>A</button>
+            <button>S</button>
+            <button>D</button>
+            <button>F</button>
+            <button>G</button>
+            <button>H</button>
+            <button>I</button>
+            <button>J</button>
+            <button>K</button>
+            <button>L</button>
+            <button>;</button>
+            <button>"</button>
+            <button class="enter-btn">Enter</button>
+            <button>Pg Dn</button>
+        </div>
+
+        <div class="row four">
+            <button class="shift">Shift</button>
+            <button>Z</button>
+            <button>X</button>
+            <button>C</button>
+            <button>V</button>
+            <button>B</button>
+            <button>N</button>
+            <button>M</button>
+            <button> > </button>
+            <button>></button>
+            <button>?</button>
+            <button class="shift">Shift</button>
+            <button>↑</button>
+            <button>End</button>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            let old = $("input").val();
+            $("input").val(old + this.innerHTML)
+
+        });
+        $(".back").click(function () {
+
+            $("input").val(null);
+        });
+
+    });
+</script>
