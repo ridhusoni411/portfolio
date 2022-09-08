@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Marvel Movies|Marvel Cinematic</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header
+    {
+        height: 55px;
+        width: 100%;
+        background-color: #202020;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .blank-1,.blank-2
+    {
+        height: 100%;
+        width: 10%;
+        border: 1px solid rgba(220, 220, 220, 0.189);
+    }
+    
+    .blank-3
+    {
+        height:100%;
+        width:55%;
+        border: 1px solid rgba(220, 220, 220, 0.37);
+
+    }
+    .blank-4,.blank-6
+    {
+        height: 100%;
+        width:10%;
+        border: 1px solid rgba(220, 220, 220, 0.308);
+        
+
+    }
+    .blank-5
+    {
+        height: 100%;
+        width: 5%;
+        border: 1px solid rgba(220, 220, 220, 0.352);
+
+    }
+    svg
+    {
+        fill: white;
+
+    }
+    .heading
+    {
+        height: 40px;
+        width: 100%;
+        background-color: #202020;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading span
+    {
+        color: white;
+    }
+    .heading-data-1,.heading-data-3
+    {
+        height: 100%;
+        width: 25%;
+    }
+    .heading-data-2
+    {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading-data-2 span
+    {
+        cursor: pointer;
+        font-size: 13px;
+    }
+    .heading-data-2 span:hover
+    {
+        color: red;
+        font-weight: 800;
+    }
+    .heading-2
+    {
+        height: 40px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fill-data-left,.fill-data-right
+    {
+        height: 100%;
+        width: 34%;
+       
+    }
+    .fill-data-middle
+    {
+        height: 100%;
+        width: 32%;
+    }
+    .dummy-data
+    {
+        color:white;
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+        cursor: pointer;
+    }
+    .gallery
+    {
+        height: 400px;
+        width: 100%;
+        background-color: lightskyblue;
+    }
+    .box {
+            height: 330px;
+            width: 80%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 5px;
+            margin-left: 10%;
+            bottom: 20px;
+           
+
+        }
+        .box-a, .box-b,.box-c,.box-d,.box-e
+         {
+            height: 100%;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 10px;
+           position: relative;
+           margin-top: 40px;
+           
+           
+          
+        }
+        .box-a img:hover, .box-b img:hover,.box-c img:hover,.box-d img:hover,.box-e img:hover
+        {
+            box-shadow: 3px 2px 12px black;
+            height: 400px;
+            position: relative;
+            bottom: 30px;
+            cursor: pointer;
+
+        }
+        .box p 
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .movies-data
+        {
+            color: black;
+            font-weight: 500;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .home-gallery
+        {
+            width: 100%;
+            height: 314px;
+        }
+        .main-data
+        {
+            color: gray;
+            font-weight: 500;
+            font-size: 15px;
+            position: relative;
+            bottom: 20px;
+            
+        }
+        .movies-data:hover
+        {
+            color: red;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .ad
+        {
+            height: 92px;
+            width: 48%;
+            background-color: yellow;
+            margin-left: 25%;
+            margin-top: 10%;
+        }
+    
+</style>
+<body>
+    <header>
+        <div class="blank-1"></div>
+        <div class="blank-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7" style="height: 25px;width50px;margin-top:10px;margin-left:9px;"><path fill-rule="evenodd" d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z"></path></svg>
+            <div class="user-menu__avatar" style="width:20px;height:20px;"><span class="icon--svg icon--svg--white-fill icon--insider-circle" aria-hidden="true"></span></div><a class="user-menu-tab sign-in"  data-click-text="sign in" data-click-type="link"  style="position: relative;bottom: 45px;left:45px;font-size:15px;color: white;font-weight: 700;">Sign In</a><span class="user-menu-tab separator" style="position: relative;bottom:45px;left: 47px;color: white;font-weight: 700;"> | </span><a class="user-menu-tab join-dropdown"  data-click-text="join" data-click-type="link" data-click-url="/register?referer=https%3a%2f%2fwww.marvel.com%2fmovies%2fthor-love-and-thunder" style="position: relative;left:48px;bottom: 45px;color: white;font-weight: 700;">Join</a></span></div></div>
+        </div>
+        <div class="blank-3">
+            <svg width="130" height="48" xmlns="http://www.w3.org/2000/svg" style="position:relative;left:40%;margin-top:3px"><rect fill="#EC1D24" width="100%" height="100%" ></rect><path fill="#FEFEFE" d="M126.222 40.059v7.906H111.58V4h7.885v36.059h6.757zm-62.564-14.5c-.61.294-1.248.44-1.87.442v-14.14h.04c.622-.005 5.264.184 5.264 6.993 0 3.559-1.58 5.804-3.434 6.705zM40.55 34.24l2.183-18.799 2.265 18.799H40.55zm69.655-22.215V4.007H87.879l-3.675 26.779-3.63-26.78h-8.052l.901 7.15c-.928-1.832-4.224-7.15-11.48-7.15-.047-.002-8.06 0-8.06 0l-.031 39.032-5.868-39.031-10.545-.005-6.072 40.44.002-40.435H21.278L17.64 26.724 14.096 4.006H4v43.966h7.95V26.78l3.618 21.192h4.226l3.565-21.192v21.192h15.327l.928-6.762h6.17l.927 6.762 15.047.008h.01v-.008h.02V33.702l1.845-.27 3.817 14.55h7.784l-.002-.01h.022l-5.011-17.048c2.538-1.88 5.406-6.644 4.643-11.203v-.002C74.894 19.777 79.615 48 79.615 48l9.256-.027 6.327-39.85v39.85h15.007v-7.908h-7.124v-10.08h7.124v-8.03h-7.124v-9.931h7.124z"></path><path fill="#EC1D24" d="M0 0h30v52H0z" ></path><path fill="#FEFEFE" d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"></path></svg>
+        </div>
+        <div class="blank-4">
+            <a class="searchPromo desktopNav__tab" href="https://www.marvel.com/unlimited?cid=dcom_navigation_20210331_unlimited_top"><img class="searchPromo__image" src="https://i.annihil.us/u/prod/marvel/images/mu/web/2021/icon-mu-shield.png" alt="Marvel Unlimited logo" style="height:25px;width:25px;position:relative;margin-left:5px;top:10px;"><div class="searchPromo__wrap"><p style="font-size: 14px;position:relative;bottom: 35px;left:30px;color: white;">Marvel Unlimited</p><span style="position: relative;bottom:50px;left:40px;font-size:13px;color:white">Subscribe</span></div></a>
+        </div>
+        <div class="blank-5">
+            <img src="search.png" style="height: 30px;width:30px;position: relative;top: 10px;left: 20px;">
+        </div>
+        <div class="blank-6"></div>
+    </header>
+
+    <div class="heading">
+        <div class="heading-data-1"></div>
+        <div class="heading-data-2">
+         <span>VIDEOS</span>
+        <span>CHARACTERS</span>
+        <span>COMICS</span>
+        <span>MOVIES</span>
+        <span>TV SHOWS</span>
+        <span>GAMES</span>
+        <span>NEWS</span>
+        <span>MORE</span>
+        </div>
+        <div class="heading-data-3"></div>
+        </div>
+        <div class="heading-2">
+            <div class="fill-data-left"></div>
+            <div class="fill-data-middle">
+                <span class="dummy-data" style="margin-left: 10px;">STREAM SHE-HULK:</span>
+                <SPan class="dummy-data">ATTORNEY-AT-LAW</SPan>
+                <SPan class="dummy-data">EXCLUSIVELY ON</SPan>
+                <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" style="position: relative;top:4px;float: right;width:90px;margin-right: 10px;">
+            </div>
+            <div class="fill-data-right"></div>
+        </div>
+        <div class="gallery">
+            <img src="Capture22.PNG" style="width: 100%;height: 400px;">
+         </div>
+          <div class="box">
+            <div class="box-a"><img src="movie-1.png"><p class="movies-data">Black Panther:Wakanda </p><p class="main-data">Nov 11 2022</p></div>
+            <div class="box-b"><img src="movie-2.PNG"><p class="movies-data">Thor:Love and Thunder </p><p class="main-data"> 2022</p></div>
+            <div class="box-c"><img src="movie-3.PNG"><p class="movies-data">Multiverse of madness</p><p class="main-data"> 2022</p></div>
+            <div class="box-d"><img src="movie-4.PNG"><p class="movies-data">Spider-man:No way Home</p><p class="main-data"> 2021</p></div>
+            <div class="box-e"><img src="movie-5.PNG"><p class="movies-data">Eternals</p><p class="main-data"> 2021</p></div>
+         </div> 
+         <div class="home-gallery">
+            <img src="movies-6.PNG" style="height: 314px;width: 100%;margin-top:100px;">
+        </div>
+        <div class="ad">
+            <img src="ad.jpg" style="height: 96px;width: 100%;">
+            <center>
+                <p style="color: rgba(128, 128, 128, 0.539);">ADVERTISEMENT</p>
+            </center>
+        </div>    
+</body>
+</html>
+
