@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>calculator</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        background-color: lightgreen;
+
+    }
+    .box
+    {
+        height: 360px;
+        width:350px;
+        background-color: skyblue;
+        margin-top: 150px;
+        
+    }
+    input
+    {
+        height:45px;
+        width:300px;
+        margin-top: 10px;
+        font-size: 20px;
+        border: none;
+    }
+    .box-btn-1,.box-btn-2, .box-btn-3,.box-btn-4
+    {
+        
+        width:300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .fill-btn
+    {
+        height:50px;
+        width:300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-color: white;
+        border: none;
+        font-size: 25px;
+        font-weight: 700;
+        
+    }
+    .fill-btn-1,.fill-btn-2,.fill-btn-3,.fill-btn-5
+    {
+        background-color: rgb(250, 250, 122);
+        height:50px;
+        width:300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border: none;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .fill-btn-4
+    {
+        background-color: hotpink;
+        height:50px;
+        width:300px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border: none;
+        font-size: 25px;
+        font-weight: 700
+    }   
+</style>
+<body>
+    <center>
+    <div class="box">
+        <input type="text">
+        <div class="box-btn-1">
+            <button class="fill-btn">1</button>
+            <button class="fill-btn">2</button>
+            <button class="fill-btn">3</button>
+            <button class="fill-btn-1">+</button>
+
+        </div>
+
+        <div class="box-btn-2">
+            <button class="fill-btn">4</button>
+            <button class="fill-btn">5</button>
+            <button class="fill-btn">6</button>
+            <button class="fill-btn-2">-</button>
+
+        </div>
+        <div class="box-btn-3">
+            <button class="fill-btn">7</button>
+            <button class="fill-btn">8</button>
+            <button class="fill-btn">9</button>
+            <button class="fill-btn-3">*</button>
+
+        </div>
+        <div class="box-btn-4">
+            <button class="fill-btn-4">C</button>
+            <button class="fill-btn">0</button>
+            <button class="fill-btn">=</button>
+            <button class="fill-btn-5">/</button>
+
+        </div>
+    </div>
+</center>
+    
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+    var get_old,get_new;
+
+    $(document).ready(function () {
+        $("button").click(function () {
+
+            if(this.getAttribute("class") == "equal")
+            {
+                return 0;
+            }
+
+            var old = $("input").val();
+            $("input").val(old + this.innerHTML);
+        });
+
+        $(".equal").click(function(){
+            let answer = eval($("input").val());
+            $("input").val(answer);
+        });
+
+        $(".fill-btn-4").click(function(){
+            $("input").val(null);
+        });
+
+    });
+</script>
