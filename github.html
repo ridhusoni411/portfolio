@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    header
+    {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-1
+    {
+        height: 100%;
+        width: 10%;
+    }
+    .box-2
+    {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-a
+    {
+        height: 100%;
+        width: 20%;
+    }
+
+    .box-b
+    {
+        height: 100%;
+        width: 80%;
+        font-size: 17px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .box-3
+    {
+        height: 100%;
+        width: 20%;
+    }
+    .box-4
+    {
+        height: 100%;
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-c
+    {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .box-d
+    {
+        height: 100%;
+        width: 50%;
+    }
+
+    .box-5
+    {
+        height: 100%;
+        width: 10%;
+    }
+    svg
+    {
+        fill: white;
+        
+    }
+    button
+    {
+        
+        width: 90px;
+        height: 30px;
+        font-size: 17px;
+        margin-top: 13px;
+        margin-left: 15px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+    }
+    .btn
+    {
+        border-radius: 5px;
+        height: 30px;
+        border: 1px solid gray;
+    }
+    .btn:hover
+    {
+        border: 2px solid red;
+    }
+    input
+    {
+        height: 30px;
+        width: 190px;
+        padding-left: 10px;
+        font-size: 17px;
+        border-radius: 5px;
+
+    }
+    .container
+    {
+        height: 60px;
+        width: 100%;
+        background-color: rgba(243, 238, 238, 0.728);
+    }
+    .fill-data
+    {
+        color: #0969da;
+        font-size: 20px;
+        margin-left: 30px;
+        position: relative;
+        top: 20px;
+        
+    }
+    .dummy-data
+    {
+        position: absolute;
+        right: 12px;
+    }
+    .my-btn
+    {
+        height: 25px;
+        position: relative;
+        bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        color: black;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .conatainer-one
+    {
+        height: 30px;
+        width: 100%;
+        background-color: rgba(243, 238, 238, 0.728);
+        display: flex;
+        flex-direction: row; 
+        border-bottom: 1px solid gray;
+    }
+    .conatainer-one span
+    {
+        font-size: 17px;
+        color: black;
+        justify-content: space-around;
+        margin-left: 30px;
+        
+    }
+    
+    
+</style>
+<body>
+    <header>
+        <div class="box-1"></div>
+        <div class="box-2">
+            <div class="box-a">
+                <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github" style="margin-top:15px;margin-left:25px;">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </div>
+            <div class="box-b">
+                <spna>Product</spna>
+                <spna>Solutions</spna>
+                <spna>Open Source</spna>
+                <spna>Pricing</spna>
+            </div>
+        </div>
+        <div class="box-3"></div>
+        <div class="box-4">
+            <div class="box-c"><input type="text" placeholder="Search"></div>
+            <div class="box-d"><button>Sign in</button>
+            <button class="btn">Sign Up</button>
+        </div>
+            
+        </div>
+        <div class="box-5"></div>
+    </header>
+    <div class="container">
+        <span class="fill-data">dummyUser127/ <b>instagram_free_followers</b></span><br>
+        <span class="dummy-data">
+            <button class="my-btn">Fork</button>
+            <button class="my-btn">Star</button>
+            <button class="my-btn">Notification</button>
+        </span>
+    </div>
+    <div class="conatainer-one">
+        <span>Code</span>
+        <span>Issue</span>
+        <span>Project</span>
+        <span>Action</span>
+        <span>Pull-Request</span>
+        <span>Security</span>
+        <span>insights</span>
+
+    </div>
+    
+</body>
+</html>
